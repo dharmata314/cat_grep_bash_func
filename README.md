@@ -1,1 +1,3 @@
-# cat_grep_bash_func
+# Cat Grep Bash In C
+
+Implementation of cat and grep BASH functions in C with flags
