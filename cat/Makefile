@@ -1,16 +1,16 @@
-all: s21_cat
+all: cat
 
-s21_cat: s21_cat.o func.o
-	gcc -Wall -Werror -Wextra s21_cat.o func.o -o s21_cat
+cat: cat.o func.o
+	gcc -Wall -Werror -Wextra cat.o func.o -o cat
 
-s21_cat.o: s21_cat.c
-	gcc -Wall -Werror -Wextra -c s21_cat.c -std=c11
+cat.o: cat.c
+	gcc -Wall -Werror -Wextra -c cat.c -std=c11
 
 func.o: ../func_cat/func.c
 	gcc -Wall -Werror -Wextra -c ../func_cat/func.c -std=c11
 
 clean: 
-	rm s21_cat.o s21_cat func.o
+	rm cat.o cat func.o
 
 rebuild: clean all
 
